@@ -44,7 +44,7 @@ def main():
         sys.exit(1)
 
     input_file = sys.argv[1]
-    min_length = sys.argv[2]
+    min_length = int(sys.argv[2])
 
     sequences = parse_fasta(input_file)
     filtered = filter_by_length(sequences, min_length)
